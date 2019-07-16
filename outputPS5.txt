@@ -1,0 +1,49 @@
+
+---------------------------------- Program Starts ----------------------------------
+Loading Patients From File
+----------- Queue-----------------
+Number of Patients added : 3
+Name : Surya Age :60 Patient Id :100060
+Name : Rishi Age :57 Patient Id :100257
+Name : Ajay Age :54 Patient Id :100154
+----------------------------------------
+Command recived is : newPatient: John, 55
+New Patient Added 
+Name :  John Age :55 Patient Id :100355
+Refreshed Queue is
+----------- Queue-----------------
+Number of Patients added : 4
+Name : Surya Age :60 Patient Id :100060
+Name : Rishi Age :57 Patient Id :100257
+Name :  John Age :55 Patient Id :100355
+Name : Ajay Age :54 Patient Id :100154
+----------------------------------------
+Command recived is : nextPatient
+Next patient is Name : Surya Age :60 Patient Id :100060
+Command recived is : newPatient: Pradeep, 45
+New Patient Added 
+Name :  Pradeep Age :45 Patient Id :100445
+Refreshed Queue is
+----------- Queue-----------------
+Number of Patients added : 4
+Name : Rishi Age :57 Patient Id :100257
+Name :  John Age :55 Patient Id :100355
+Name : Ajay Age :54 Patient Id :100154
+Name :  Pradeep Age :45 Patient Id :100445
+----------------------------------------
+Command recived is : nextPatient
+Next patient is Name : Rishi Age :57 Patient Id :100257
+Command recived is : nextPatient
+Next patient is Name :  John Age :55 Patient Id :100355
+Command recived is : newPatient: Sandeep, 60
+New Patient Added 
+Name :  Sandeep Age :60 Patient Id :100560
+Refreshed Queue is
+----------- Queue-----------------
+Number of Patients added : 3
+Name :  Sandeep Age :60 Patient Id :100560
+Name : Ajay Age :54 Patient Id :100154
+Name :  Pradeep Age :45 Patient Id :100445
+----------------------------------------
+Command recived is : nextPatient
+Next patient is Name :  Sandeep Age :60 Patient Id :100560

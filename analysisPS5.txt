@@ -1,0 +1,43 @@
+How to run
+1) unzip the submitted file
+2) in any IDE or cmd navigate to the directory
+3) Run the mainfile.py
+4) The output will be furnished in outputPS5.txt
+5) Output file generated from run has been attached
+6) output screenshot have also been attached
+
+Assumotions and design decisions
+
+
+### the program simulates doctor appointment system
+### It uses a linked list to store info about patients
+### It uses a max heap to represent priority queue for patients basd on age
+### A new patient record is stored in linked list ( Patient Record)
+### current consultiations are present in a max heap
+### Program first loads patients from inputPS5a.txt and then follows commands in inputPS5b.txt
+### Output is stored the releveant out file
+### Assumptions and clarifications
+### 1) As in requirments we need to show queue after each operation, we make a copy of heap and pop it to display queue
+### 2) Heap stores whole patient record. if we were to only store patient id, then to display name we would have to everytime 
+### search linked list and it would have been unoptimized 
+### 3) We check that if no patient in queue ( heap ) and a nextPatient (pop) called then we should flag error
+### 4) We assume no upper limit for patient count and hence can oush multiple patients
+### 5) The design makes assumptions on th instructions to optimize the solution wherevre possible
+### 6) In linked list , each new registered patient is stored as the head , O(1))
+### 7) In deque, we dont need patient id as it is by default dequeud from top of the heap
+
+
+Time Complexity analysis of design
+Each patient is added to linked list and then oushed on to a priority queue implemented 
+as heap. Follwoing is respective time complexity of few operations
+
+
+1) Registering new patient to linked list : O(1)  as we simply add it to head
+2) Making  a heap based on age as priority for the starting number of paitents n : n * log(n)
+here for each patient we insert into max heap. This take slog n as we insert at last and then 
+go upwards in the tree to heapfiy. So for n elemnets this take O(n*log(n))
+3) Deleting a patient / displaying next patient: here it takes O (log(n)) as we heapify from
+top to bottom
+4) displaying the current quee elements : here we pop all elemnts of heap and dislay them
+this takes log(n) for deletion and this is done for each elemnet. hence  o(n*log(n))
+5) Overall program complexity : O(n*log(n)) # max complexity of above 
